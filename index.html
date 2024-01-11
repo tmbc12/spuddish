@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Codrops" />
+	<title>Spuddish</title>
+	<meta name="description" content="Spuddish">
+	<meta name="framer-search-index"
+		content="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/searchIndex-bzBoiEky1ok1.json">
+	<link rel="icon" href="https://framerusercontent.com/images/4toXoJ6ng9iL3qke5HfzUa3rKk.png">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Spuddish">
+	<meta property="og:description" content="Spuddish">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Spuddish">
+	<meta name="twitter:description" content="Spuddish">
+	<style>
+		/* Color schemes */
+		.demo-1 {
+			--color-text: #86eae7;
+			--color-link: #fff;
+			--color-link-hover: #86eae7;
+			--color-title: #fff;
+		}
+
+		.demo-2 {
+			--color-text: #ff53ff;
+			--color-link: #3c48fa;
+			--color-link-hover: #fff;
+			--color-title: #fff;
+		}
+
+		.demo-3 {
+			--color-text: #1ed97c;
+			--color-link: #fff;
+			--color-link-hover: #fff;
+			--color-title: #fff;
+		}
+
+		.demo-4 {
+			--color-text: #f0ea42;
+			--color-link: #ce8c32;
+			--color-link-hover: #fff;
+			--color-title: #ce8c32;
+		}
+
+		.demo-5 {
+			--color-text: #5c5ee7;
+			--color-link: #0ab5e4;
+			--color-link-hover: #fff;
+			--color-title: #0ab5e4;
+		}
+
+		a {
+			text-decoration: none;
+			color: var(--color-link);
+			outline: none;
+		}
+	</style>
+
+	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
+	<link rel="canonical" href="index.html">
+	<meta property="og:url" content="https://spuddishweb.framer.website/">
+	<link rel="modulepreload" href="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/chunk-IWS2POGH.mjs">
+	<link rel="modulepreload" href="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/chunk-F2GCO4GT.mjs">
+	<link rel="modulepreload" href="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/chunk-ELYU6EKT.mjs">
+	<link rel="modulepreload"
+		href="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/3C0XYoPOSvRIeMqi-waG1NzcN8jAwn86G88n5Z4uMkI.GD6XFCIS.mjs">
+	<link rel="modulepreload" href="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/chunk-NWJHOYR2.mjs">
+	<link rel="modulepreload" href="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/chunk-MRXKMB5A.mjs">
+	<link rel="modulepreload" href="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/chunk-63NIZTEO.mjs">
+	<link rel="modulepreload" href="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/chunk-TPYJMYJE.mjs">
+	<link rel="modulepreload" href="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/chunk-42U43NKG.mjs">
+    <style data-framer-css-ssr-minified="" data-framer-components="">
+        html,
+        body,
+        #main {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        :root {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-font-smoothing: inherit
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        figure {
+            margin: 0
+        }
+
+        body,
+        input,
+        textarea,
+        select,
+        button {
+            font-size: 12px;
+            font-family: sans-serif
+        }
+
+        body {
+            --token-a042497d-749d-4d03-8d3a-78930210d354: rgb(0, 128, 255);
+            --token-419394a1-565d-4952-8ba3-b4f1eb92339c: #050505;
+            --token-bf966309-2582-4df8-98f4-f091ce81e703: #131415;
+            --token-3edc53ec-2b53-43fb-be53-9e75b862c113: #161819;
+            --token-38c4cf9a-0aa8-4902-ad35-3a2d52d62d05: #1A1C1D;
+            --token-6029dbfc-fbac-430b-a786-4e5dcea7423c: #1E2021;
+            --token-965e5c17-6359-41cc-bd03-2fa4898e2c2b: #222426;
+            --token-88270a27-b998-4d64-94e7-850fa71e2842: #272B2D;
+            --token-6caa153b-31c9-4eaa-bd6e-82180b70617c: #33373A;
+            --token-778dc32c-fa91-4f86-8154-267d5648c0d5: #474D50;
+            --token-82b5832e-a0cf-4abf-84b4-daf77b132a71: #51565A;
+            --token-84002464-baa0-40a1-a1a1-82899aec539a: #9BA1A5;
+            --token-20608b9f-0145-4a1e-b971-ee948ebbb015: #FFFFFF
+        }
+
+
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZJhiI2B.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZthiI2B.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZNhiI2B.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZxhiI2B.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZBhiI2B.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZFhiI2B.woff2) format("woff2");
+            unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-family: Inter Placeholder;
+            src: local("Arial");
+            ascent-override: 90%;
+            descent-override: 22.43%;
+            line-gap-override: 0%;
+            size-adjust: 107.64%
+        }
+
+        @font-face {
+            font-family: Satoshi;
+            src: url(https://framerusercontent.com/third-party-assets/fontshare/wf/TTX2Z3BF3P6Y5BQT3IV2VNOK6FL22KUT/7QYRJOI3JIMYHGY6CH7SOIFRQLZOLNJ6/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2);
+            font-display: swap;
+            font-style: normal;
+            font-weight: 400
+        }
+
+        @font-face {
+            font-family: Satoshi Placeholder;
+            src: local("Arial");
+            ascent-override: 102.23%;
+            descent-override: 24.29%;
+            line-gap-override: 10.12%;
+            size-adjust: 98.8%
+        }
+
+        @font-face {
+            font-family: Satoshi;
+            src: url(https://framerusercontent.com/third-party-assets/fontshare/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2);
+            font-display: swap;
+            font-style: normal;
+            font-weight: 700
+        }
+
+        @font-face {
+            font-family: Satoshi;
+            src: url(https://framerusercontent.com/third-party-assets/fontshare/wf/CDEBEFT2R7XKNGXSBBLZGMY4MMHZG75P/HEVKDGQCYDZ7Z6CDVR2ZQGBCTUD6ZARH/BKWEE3VKGTFABE37K2DTH625VUSN2N35.woff2);
+            font-display: swap;
+            font-style: italic;
+            font-weight: 700
+        }
+
+        @font-face {
+            font-family: Satoshi;
+            src: url(https://framerusercontent.com/third-party-assets/fontshare/wf/MPIFA4B3XXRNY2MJDGP6GOOOAF6EOCLO/W5E4ZFYPJ3V6JKMBGHB6YMITK6EWS2XA/QOMBWPST76ICDYF6WOBS7SQ7RBT67QW2.woff2);
+            font-display: swap;
+            font-style: italic;
+            font-weight: 400
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-Thin.cyrillic-ext-BHDA65O4.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-Thin.cyrillic-Q5IXHU2O.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-Thin.greek-ext-VVOQA2NE.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-Thin.greek-E3WNEUH6.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-Thin.latin-ext-5RC4NRHN.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-Thin.latin-GJ7CRGHG.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-Thin.vietnamese-Z3Y7DPWO.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLight.cyrillic-ext-7NWKXNAT.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLight.cyrillic-IBWUD6RJ.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLight.greek-ext-HUMDTRBU.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLight.greek-ZLLHEEN3.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLight.latin-ext-72JE5FGU.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLight.latin-2JHDAFAQ.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLight.vietnamese-VKRCA4VC.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-Light.cyrillic-ext-G3OTPKE4.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-Light.cyrillic-JO7ZJTP6.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-Light.greek-ext-N63XCCK3.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-Light.greek-5GVUXSXZ.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-Light.latin-ext-RREJIMQ3.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-Light.latin-EKF76FXR.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-Light.vietnamese-GVC2UOFS.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Regular.cyrillic-ext-CFTLRB35.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Regular.cyrillic-KKLZBALH.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Regular.greek-ext-ULEBLIFV.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Regular.greek-IRHSNFQB.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Regular.latin-ext-VZDUGU3Q.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Regular.latin-JLQMKCHE.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Regular.vietnamese-QK7VSWXK.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-Medium.cyrillic-ext-M4WHNGTS.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-Medium.cyrillic-JVU2PANX.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-Medium.greek-ext-4KCQBEIZ.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-Medium.greek-DPOQGN7L.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-Medium.latin-ext-J4DBSW7F.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-Medium.latin-Y3IVPL46.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-Medium.vietnamese-PJV76O4P.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBold.cyrillic-ext-C7KWUKA7.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBold.cyrillic-JWV7SOZ6.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBold.greek-ext-FBKSFTSU.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBold.greek-EQ3PSENU.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBold.latin-ext-ULRSO3ZR.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBold.latin-RDYY2AG2.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBold.vietnamese-ESQNSEQ3.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-Bold.cyrillic-ext-XOTVL7ZR.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-Bold.cyrillic-6LOMBC2V.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-Bold.greek-ext-WXWSJXLB.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-Bold.greek-YRST7ODZ.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-Bold.latin-ext-BASA5UL3.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-Bold.latin-UCM45LQF.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-Bold.vietnamese-OEVJMXEP.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBold.cyrillic-ext-7Q6SVIPE.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBold.cyrillic-JSLPE6KW.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBold.greek-ext-6OYGJJV7.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBold.greek-SHW2FPC4.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBold.latin-ext-A5DUFOP6.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBold.latin-OW4UGSRU.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBold.vietnamese-IBBC7NGV.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-Black.cyrillic-ext-TU4ITVTR.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-Black.cyrillic-JX7CGTYD.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-Black.greek-ext-LS3GCBFI.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-Black.greek-ZWCJHBP5.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-Black.latin-ext-BZLEUMX6.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-Black.latin-TETRYDF7.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-Black.vietnamese-RXQCC3EJ.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-ThinItalic.cyrillic-ext-2RGKWUBV.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-ThinItalic.cyrillic-TDYIP5HV.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-ThinItalic.greek-ext-WR4TIDYZ.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-ThinItalic.greek-V3WZMSP7.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-ThinItalic.latin-ext-TXFTJONQ.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-ThinItalic.latin-RVEBKP6O.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://app.framerstatic.com/Inter-ThinItalic.vietnamese-WCBPP4MD.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.cyrillic-ext-OVCHMVPD.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.cyrillic-BRDZE5UH.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.greek-ext-YV64YFFH.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.greek-EJVCLASM.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.latin-ext-2MHTM56A.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.latin-JB3CJMMM.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 200;
+            src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.vietnamese-3EJ3IQYS.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-LightItalic.cyrillic-ext-C2S5XS3D.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-LightItalic.cyrillic-E7CYPW5D.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-LightItalic.greek-ext-ROSAFPGE.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-LightItalic.greek-PAWWH37Z.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-LightItalic.latin-ext-N2Z67Z45.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-LightItalic.latin-SLSTLWEU.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://app.framerstatic.com/Inter-LightItalic.vietnamese-RLGM2D3Y.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Italic.cyrillic-ext-YDGMJOJO.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Italic.cyrillic-BFOVMAQB.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Italic.greek-ext-4KOU3AHC.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Italic.greek-OJTBJNE6.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Italic.latin-ext-H4B22QN6.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Italic.latin-2DWX32EN.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://app.framerstatic.com/Inter-Italic.vietnamese-TYMT6CKW.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-MediumItalic.cyrillic-ext-QYBZQ2NF.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-MediumItalic.cyrillic-ZHAJHZCC.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-MediumItalic.greek-ext-W5ABYGZR.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-MediumItalic.greek-RGNSYVNV.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-MediumItalic.latin-ext-7DZEPSAS.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-MediumItalic.latin-SKPQAMBJ.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://app.framerstatic.com/Inter-MediumItalic.vietnamese-23WIFZV7.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.cyrillic-ext-MEHHCDC3.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.cyrillic-YACNRNDE.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.greek-ext-GFL7KADI.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.greek-5W77OPRT.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.latin-ext-OYJJ2W6R.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.latin-KBLJMBDH.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.vietnamese-5ZFOV65G.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-BoldItalic.cyrillic-ext-PEYDHC3S.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-BoldItalic.cyrillic-7EIL6JWG.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-BoldItalic.greek-ext-3DJOYQMH.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-BoldItalic.greek-TJBTLTT7.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-BoldItalic.latin-ext-FVPCPRBJ.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-BoldItalic.latin-5ZFQS4XK.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://app.framerstatic.com/Inter-BoldItalic.vietnamese-W2625PGF.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.cyrillic-ext-ACWDZ3VD.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.cyrillic-ZKBSDAI2.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.greek-ext-3CY5DPTP.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.greek-YL5CC63W.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.latin-ext-7IZFJI4D.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.latin-O5HH4IX3.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 800;
+            src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.vietnamese-UW3XUJOD.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-BlackItalic.cyrillic-ext-TRM4ITYR.woff2) format("woff2");
+            unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-BlackItalic.cyrillic-FPHIQVZS.woff2) format("woff2");
+            unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-BlackItalic.greek-ext-JTGUUSP5.woff2) format("woff2");
+            unicode-range: U+1F00-1FFF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-BlackItalic.greek-LUNA3RFO.woff2) format("woff2");
+            unicode-range: U+0370-03FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-BlackItalic.latin-ext-KU7ICFYH.woff2) format("woff2");
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-BlackItalic.latin-FRVXWQSB.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+        }
+
+        @font-face {
+            font-display: block;
+            font-family: Inter;
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://app.framerstatic.com/Inter-BlackItalic.vietnamese-2Q7MQKJX.woff2) format("woff2");
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB
+        }
+
+        [data-framer-component-type] {
+            position: absolute
+        }
+
+        [data-framer-component-type=Text] {
+            cursor: inherit
+        }
+
+        [data-framer-component-text-autosized] * {
+            white-space: pre
+        }
+
+        [data-framer-component-type=Text]>* {
+            text-align: var(--framer-text-alignment, start)
+        }
+
+        [data-framer-component-type=Text] span span,
+        [data-framer-component-type=Text] p span,
+        [data-framer-component-type=Text] h1 span,
+        [data-framer-component-type=Text] h2 span,
+        [data-framer-component-type=Text] h3 span,
+        [data-framer-component-type=Text] h4 span,
+        [data-framer-component-type=Text] h5 span,
+        [data-framer-component-type=Text] h6 span {
+            display: block
+        }
+
+        [data-framer-component-type=Text] span span span,
+        [data-framer-component-type=Text] p span span,
+        [data-framer-component-type=Text] h1 span span,
+        [data-framer-component-type=Text] h2 span span,
+        [data-framer-component-type=Text] h3 span span,
+        [data-framer-component-type=Text] h4 span span,
+        [data-framer-component-type=Text] h5 span span,
+        [data-framer-component-type=Text] h6 span span {
+            display: unset
+        }
+
+        [data-framer-component-type=Text] div div span,
+        [data-framer-component-type=Text] a div span,
+        [data-framer-component-type=Text] span span span,
+        [data-framer-component-type=Text] p span span,
+        [data-framer-component-type=Text] h1 span span,
+        [data-framer-component-type=Text] h2 span span,
+        [data-framer-component-type=Text] h3 span span,
+        [data-framer-component-type=Text] h4 span span,
+        [data-framer-component-type=Text] h5 span span,
+        [data-framer-component-type=Text] h6 span span,
+        [data-framer-component-type=Text] a {
+            font-family: var(--font-family);
+            font-style: var(--font-style);
+            font-weight: min(calc(var(--framer-font-weight-increase, 0) + var(--font-weight, 400)), 900);
+            color: var(--text-color);
+            letter-spacing: var(--letter-spacing);
+            font-size: var(--font-size);
+            text-transform: var(--text-transform);
+            text-decoration: var(--text-decoration);
+            line-height: var(--line-height)
+        }
+
+        [data-framer-component-type=Text] div div span,
+        [data-framer-component-type=Text] a div span,
+        [data-framer-component-type=Text] span span span,
+        [data-framer-component-type=Text] p span span,
+        [data-framer-component-type=Text] h1 span span,
+        [data-framer-component-type=Text] h2 span span,
+        [data-framer-component-type=Text] h3 span span,
+        [data-framer-component-type=Text] h4 span span,
+        [data-framer-component-type=Text] h5 span span,
+        [data-framer-component-type=Text] h6 span span,
+        [data-framer-component-type=Text] a {
+            --font-family: var(--framer-font-family);
+            --font-style: var(--framer-font-style);
+            --font-weight: var(--framer-font-weight);
+            --text-color: var(--framer-text-color);
+            --letter-spacing: var(--framer-letter-spacing);
+            --font-size: var(--framer-font-size);
+            --text-transform: var(--framer-text-transform);
+            --text-decoration: var(--framer-text-decoration);
+            --line-height: var(--framer-line-height)
+        }
+
+        [data-framer-component-type=Text] a,
+        [data-framer-component-type=Text] a div span,
+        [data-framer-component-type=Text] a span span span,
+        [data-framer-component-type=Text] a p span span,
+        [data-framer-component-type=Text] a h1 span span,
+        [data-framer-component-type=Text] a h2 span span,
+        [data-framer-component-type=Text] a h3 span span,
+        [data-framer-component-type=Text] a h4 span span,
+        [data-framer-component-type=Text] a h5 span span,
+        [data-framer-component-type=Text] a h6 span span {
+            --font-family: var(--framer-link-font-family, var(--framer-font-family));
+            --font-style: var(--framer-link-font-style, var(--framer-font-style));
+            --font-weight: var(--framer-link-font-weight, var(--framer-font-weight));
+            --text-color: var(--framer-link-text-color, var(--framer-text-color));
+            --font-size: var(--framer-link-font-size, var(--framer-font-size));
+            --text-transform: var(--framer-link-text-transform, var(--framer-text-transform));
+            --text-decoration: var(--framer-link-text-decoration, var(--framer-text-decoration))
+        }
+
+        [data-framer-component-type=Text] a:hover,
+        [data-framer-component-type=Text] a div span:hover,
+        [data-framer-component-type=Text] a span span span:hover,
+        [data-framer-component-type=Text] a p span span:hover,
+        [data-framer-component-type=Text] a h1 span span:hover,
+        [data-framer-component-type=Text] a h2 span span:hover,
+        [data-framer-component-type=Text] a h3 span span:hover,
+        [data-framer-component-type=Text] a h4 span span:hover,
+        [data-framer-component-type=Text] a h5 span span:hover,
+        [data-framer-component-type=Text] a h6 span span:hover {
+            --font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family)));
+            --font-style: var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style)));
+            --font-weight: var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight)));
+            --text-color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color)));
+            --font-size: var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size)));
+            --text-transform: var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform)));
+            --text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration)))
+        }
+
+        [data-framer-component-type=Text].isCurrent a,
+        [data-framer-component-type=Text].isCurrent a div span,
+        [data-framer-component-type=Text].isCurrent a span span span,
+        [data-framer-component-type=Text].isCurrent a p span span,
+        [data-framer-component-type=Text].isCurrent a h1 span span,
+        [data-framer-component-type=Text].isCurrent a h2 span span,
+        [data-framer-component-type=Text].isCurrent a h3 span span,
+        [data-framer-component-type=Text].isCurrent a h4 span span,
+        [data-framer-component-type=Text].isCurrent a h5 span span,
+        [data-framer-component-type=Text].isCurrent a h6 span span {
+            --font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family)));
+            --font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style)));
+            --font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight)));
+            --text-color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color)));
+            --font-size: var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size)));
+            --text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform)));
+            --text-decoration: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration)))
+        }
+
+        p.framer-text,
+        div.framer-text,
+        h1.framer-text,
+        h2.framer-text,
+        h3.framer-text,
+        h4.framer-text,
+        h5.framer-text,
+        h6.framer-text,
+        ol.framer-text,
+        ul.framer-text {
+            margin: 0;
+            padding: 0
+        }
+
+        p.framer-text,
+        div.framer-text,
+        h1.framer-text,
+        h2.framer-text,
+        h3.framer-text,
+        h4.framer-text,
+        h5.framer-text,
+        h6.framer-text,
+        li.framer-text,
+        ol.framer-text,
+        ul.framer-text,
+        span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-font-family, Inter, Inter Placeholder, sans-serif);
+            font-style: var(--framer-font-style, normal);
+            font-weight: var(--framer-font-weight, 400);
+            color: var(--framer-text-color, #000);
+            font-size: calc(var(--framer-font-size, 16px) * var(--framer-font-size-scale, 1));
+            letter-spacing: var(--framer-letter-spacing, 0);
+            text-transform: var(--framer-text-transform, none);
+            text-decoration: var(--framer-text-decoration, none);
+            line-height: var(--framer-line-height, 1.2em);
+            text-align: var(--framer-text-alignment, start)
+        }
+
+        strong.framer-text {
+            font-family: var(--framer-font-family-bold);
+            font-style: var(--framer-font-style-bold);
+            font-weight: var(--framer-font-weight-bold, bolder)
+        }
+
+        em.framer-text {
+            font-family: var(--framer-font-family-italic);
+            font-style: var(--framer-font-style-italic, italic);
+            font-weight: var(--framer-font-weight-italic)
+        }
+
+        em.framer-text>strong.framer-text {
+            font-family: var(--framer-font-family-bold-italic);
+            font-style: var(--framer-font-style-bold-italic, italic);
+            font-weight: var(--framer-font-weight-bold-italic, bolder)
+        }
+
+        p.framer-text:not(:first-child),
+        div.framer-text:not(:first-child),
+        h1.framer-text:not(:first-child),
+        h2.framer-text:not(:first-child),
+        h3.framer-text:not(:first-child),
+        h4.framer-text:not(:first-child),
+        h5.framer-text:not(:first-child),
+        h6.framer-text:not(:first-child),
+        ol.framer-text:not(:first-child),
+        ul.framer-text:not(:first-child),
+        .framer-image.framer-text:not(:first-child) {
+            margin-top: var(--framer-paragraph-spacing, 0)
+        }
+
+        li.framer-text>ul.framer-text:nth-child(2),
+        li.framer-text>ol.framer-text:nth-child(2) {
+            margin-top: 0
+        }
+
+        .framer-text[data-text-fill] {
+            display: inline-block;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: max(0em, calc(calc(1.3em - var(--framer-line-height, 1.3em)) / 2));
+            margin: min(0em, calc(calc(1.3em - var(--framer-line-height, 1.3em)) / -2))
+        }
+
+        code.framer-text,
+        code.framer-text span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+            font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
+            font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
+            color: var(--framer-code-text-color, var(--framer-text-color, #000));
+            font-size: calc(var(--framer-font-size, 16px) * var(--framer-font-size-scale, 1));
+            letter-spacing: var(--framer-letter-spacing, 0);
+            line-height: var(--framer-line-height, 1.2em)
+        }
+
+        a.framer-text,
+        a.framer-text span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+            font-style: var(--framer-link-font-style, var(--framer-font-style, normal));
+            font-weight: var(--framer-link-font-weight, var(--framer-font-weight, 400));
+            color: var(--framer-link-text-color, var(--framer-text-color, #000));
+            font-size: calc(var(--framer-link-font-size, var(--framer-font-size, 16px)) * var(--framer-font-size-scale, 1));
+            text-transform: var(--framer-link-text-transform, var(--framer-text-transform, none));
+            text-decoration: var(--framer-link-text-decoration, var(--framer-text-decoration, none));
+            cursor: var(--framer-custom-cursors, pointer)
+        }
+
+        code.framer-text a.framer-text,
+        code.framer-text a.framer-text span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+            font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
+            font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
+            color: var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)));
+            font-size: calc(var(--framer-link-font-size, var(--framer-font-size, 16px)) * var(--framer-font-size-scale, 1))
+        }
+
+        a.framer-text:hover,
+        a.framer-text:hover span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+            font-style: var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+            font-weight: var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+            color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+            font-size: calc(var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))) * var(--framer-font-size-scale, 1));
+            text-transform: var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+            text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))
+        }
+
+        code.framer-text a.framer-text:hover,
+        code.framer-text a.framer-text:hover span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+            font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
+            font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
+            color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));
+            font-size: calc(var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))) * var(--framer-font-size-scale, 1))
+        }
+
+        a.framer-text[data-framer-page-link-current],
+        a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+            font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+            font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+            color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+            font-size: calc(var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))) * var(--framer-font-size-scale, 1));
+            text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+            text-decoration: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))
+        }
+
+        code.framer-text a.framer-text[data-framer-page-link-current],
+        code.framer-text a.framer-text[data-framer-page-link-current] span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+            font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
+            font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
+            color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000))));
+            font-size: calc(var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))) * var(--framer-font-size-scale, 1))
+        }
+
+        a.framer-text[data-framer-page-link-current]:hover,
+        a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
+            font-style: var(--framer-link-hover-font-style, var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
+            font-weight: var(--framer-link-hover-font-weight, var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
+            color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
+            font-size: calc(var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)))) * var(--framer-font-size-scale, 1));
+            text-transform: var(--framer-link-hover-text-transform, var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none))));
+            text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none))))
+        }
+
+        code.framer-text a.framer-text[data-framer-page-link-current]:hover,
+        code.framer-text a.framer-text[data-framer-page-link-current]:hover span.framer-text:not([data-text-fill]) {
+            font-family: var(--framer-code-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+            font-style: var(--framer-code-font-style, var(--framer-font-style, normal));
+            font-weight: var(--framer-code-font-weight, var(--framer-font-weight, 400));
+            color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-code-text-color, var(--framer-text-color, #000)))));
+            font-size: calc(var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)))) * var(--framer-font-size-scale, 1))
+        }
+
+        .framer-image.framer-text {
+            display: block;
+            max-width: 100%;
+            height: auto
+        }
+
+        .text-styles-preset-reset.framer-text {
+            --framer-font-family: Inter, Inter Placeholder, sans-serif;
+            --framer-font-style: normal;
+            --framer-font-weight: 500;
+            --framer-text-color: #000;
+            --framer-font-size: 16px;
+            --framer-letter-spacing: 0;
+            --framer-text-transform: none;
+            --framer-text-decoration: none;
+            --framer-line-height: 1.2em;
+            --framer-text-alignment: start
+        }
+
+        ol.framer-text {
+            --list-style-type: decimal
+        }
+
+        ul.framer-text,
+        ol.framer-text {
+            display: table;
+            width: 100%
+        }
+
+        li.framer-text {
+            display: table-row;
+            counter-increment: list-item;
+            list-style: none
+        }
+
+        ol.framer-text>li.framer-text:before {
+            display: table-cell;
+            width: 2.25ch;
+            box-sizing: border-box;
+            padding-inline-end: .75ch;
+            content: counter(list-item, var(--list-style-type)) ".";
+            white-space: nowrap
+        }
+
+        ul.framer-text>li.framer-text:before {
+            display: table-cell;
+            width: 2.25ch;
+            box-sizing: border-box;
+            padding-inline-end: .75ch;
+            content: "\2022"
+        }
+
+        .framer-text-module[style*=aspect-ratio]>:first-child {
+            width: 100%
+        }
+
+        @supports not (aspect-ratio: 1) {
+            .framer-text-module[style*=aspect-ratio] {
+                position: relative
+            }
+        }
+
+        @supports not (aspect-ratio: 1) {
+            .framer-text-module[style*=aspect-ratio]:before {
+                content: "";
+                display: block;
+                padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+            }
+        }
+
+        @supports not (aspect-ratio: 1) {
+            .framer-text-module[style*=aspect-ratio]>:first-child {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%
+            }
+        }
+
+        [data-framer-component-type=DeprecatedRichText] {
+            cursor: inherit
+        }
+
+        [data-framer-component-type=DeprecatedRichText] .text-styles-preset-reset {
+            --framer-font-family: Inter, Inter Placeholder, sans-serif;
+            --framer-font-style: normal;
+            --framer-font-weight: 500;
+            --framer-text-color: #000;
+            --framer-font-size: 16px;
+            --framer-letter-spacing: 0;
+            --framer-text-transform: none;
+            --framer-text-decoration: none;
+            --framer-line-height: 1.2em;
+            --framer-text-alignment: start
+        }
+
+        [data-framer-component-type=DeprecatedRichText] p,
+        [data-framer-component-type=DeprecatedRichText] div,
+        [data-framer-component-type=DeprecatedRichText] h1,
+        [data-framer-component-type=DeprecatedRichText] h2,
+        [data-framer-component-type=DeprecatedRichText] h3,
+        [data-framer-component-type=DeprecatedRichText] h4,
+        [data-framer-component-type=DeprecatedRichText] h5,
+        [data-framer-component-type=DeprecatedRichText] h6 {
+            margin: 0;
+            padding: 0
+        }
+
+        [data-framer-component-type=DeprecatedRichText] p,
+        [data-framer-component-type=DeprecatedRichText] div,
+        [data-framer-component-type=DeprecatedRichText] h1,
+        [data-framer-component-type=DeprecatedRichText] h2,
+        [data-framer-component-type=DeprecatedRichText] h3,
+        [data-framer-component-type=DeprecatedRichText] h4,
+        [data-framer-component-type=DeprecatedRichText] h5,
+        [data-framer-component-type=DeprecatedRichText] h6,
+        [data-framer-component-type=DeprecatedRichText] li,
+        [data-framer-component-type=DeprecatedRichText] ol,
+        [data-framer-component-type=DeprecatedRichText] ul,
+        [data-framer-component-type=DeprecatedRichText] span:not([data-text-fill]) {
+            font-family: var(--framer-font-family, Inter, Inter Placeholder, sans-serif);
+            font-style: var(--framer-font-style, normal);
+            font-weight: var(--framer-font-weight, 400);
+            color: var(--framer-text-color, #000);
+            font-size: var(--framer-font-size, 16px);
+            letter-spacing: var(--framer-letter-spacing, 0);
+            text-transform: var(--framer-text-transform, none);
+            text-decoration: var(--framer-text-decoration, none);
+            line-height: var(--framer-line-height, 1.2em);
+            text-align: var(--framer-text-alignment, start)
+        }
+
+        [data-framer-component-type=DeprecatedRichText] p:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] div:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] h1:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] h2:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] h3:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] h4:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] h5:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] h6:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] ol:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] ul:not(:first-child),
+        [data-framer-component-type=DeprecatedRichText] .framer-image:not(:first-child) {
+            margin-top: var(--framer-paragraph-spacing, 0)
+        }
+
+        [data-framer-component-type=DeprecatedRichText] span[data-text-fill] {
+            display: inline-block;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+
+        [data-framer-component-type=DeprecatedRichText] a,
+        [data-framer-component-type=DeprecatedRichText] a span:not([data-text-fill]) {
+            font-family: var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif));
+            font-style: var(--framer-link-font-style, var(--framer-font-style, normal));
+            font-weight: var(--framer-link-font-weight, var(--framer-font-weight, 400));
+            color: var(--framer-link-text-color, var(--framer-text-color, #000));
+            font-size: var(--framer-link-font-size, var(--framer-font-size, 16px));
+            text-transform: var(--framer-link-text-transform, var(--framer-text-transform, none));
+            text-decoration: var(--framer-link-text-decoration, var(--framer-text-decoration, none))
+        }
+
+        [data-framer-component-type=DeprecatedRichText] a:hover,
+        [data-framer-component-type=DeprecatedRichText] a:hover span:not([data-text-fill]) {
+            font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+            font-style: var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+            font-weight: var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+            color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+            font-size: var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)));
+            text-transform: var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+            text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))
+        }
+
+        a[data-framer-page-link-current],
+        a[data-framer-page-link-current] span:not([data-text-fill]) {
+            font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif)));
+            font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+            font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+            color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+            font-size: var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)));
+            text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+            text-decoration: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))
+        }
+
+        a[data-framer-page-link-current]:hover,
+        a[data-framer-page-link-current]:hover span:not([data-text-fill]) {
+            font-family: var(--framer-link-hover-font-family, var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, Inter Placeholder, sans-serif))));
+            font-style: var(--framer-link-hover-font-style, var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal))));
+            font-weight: var(--framer-link-hover-font-weight, var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400))));
+            color: var(--framer-link-hover-text-color, var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000))));
+            font-size: var(--framer-link-hover-font-size, var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px))));
+            text-transform: var(--framer-link-hover-text-transform, var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none))));
+            text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none))))
+        }
+
+        [data-framer-component-type=DeprecatedRichText] strong {
+            font-weight: bolder
+        }
+
+        [data-framer-component-type=DeprecatedRichText] em {
+            font-style: italic
+        }
+
+        [data-framer-component-type=DeprecatedRichText] .framer-image {
+            display: block;
+            max-width: 100%;
+            height: auto
+        }
+
+        [data-framer-component-type=DeprecatedRichText] ul,
+        [data-framer-component-type=DeprecatedRichText] ol {
+            display: table;
+            width: 100%;
+            padding-left: 0;
+            margin: 0
+        }
+
+        [data-framer-component-type=DeprecatedRichText] li {
+            display: table-row;
+            counter-increment: list-item;
+            list-style: none
+        }
+
+        [data-framer-component-type=DeprecatedRichText] ol>li:before {
+            display: table-cell;
+            width: 2.25ch;
+            box-sizing: border-box;
+            padding-right: .75ch;
+            content: counter(list-item) ".";
+            white-space: nowrap
+        }
+
+        [data-framer-component-type=DeprecatedRichText] ul>li:before {
+            display: table-cell;
+            width: 2.25ch;
+            box-sizing: border-box;
+            padding-right: .75ch;
+            content: "\2022"
+        }
+
+        :not([data-framer-generated])>[data-framer-stack-content-wrapper]>*,
+        :not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-component-type],
+        :not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-legacy-stack-gap-enabled]>*,
+        :not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-legacy-stack-gap-enabled]>[data-framer-component-type] {
+            position: relative
+        }
+
+        .flexbox-gap-not-supported [data-framer-legacy-stack-gap-enabled=true]>*,
+        [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false] {
+            margin-top: calc(var(--stack-gap-y) / 2);
+            margin-bottom: calc(var(--stack-gap-y) / 2);
+            margin-right: calc(var(--stack-gap-x) / 2);
+            margin-left: calc(var(--stack-gap-x) / 2)
+        }
+
+        [data-framer-stack-content-wrapper][data-framer-stack-gap-enabled=true] {
+            row-gap: var(--stack-native-row-gap);
+            column-gap: var(--stack-native-column-gap)
+        }
+
+        .flexbox-gap-not-supported [data-framer-stack-content-wrapper][data-framer-stack-gap-enabled=true] {
+            row-gap: unset;
+            column-gap: unset
+        }
+
+        .flexbox-gap-not-supported [data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true]>*:first-child,
+        [data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>*:first-child,
+        .flexbox-gap-not-supported [data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true]>*:last-child,
+        [data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>*:last-child {
+            margin-top: 0;
+            margin-left: 0
+        }
+
+        .flexbox-gap-not-supported [data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true]>*:last-child,
+        [data-framer-stack-direction-reverse=false] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>*:last-child,
+        .flexbox-gap-not-supported [data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true]>*:first-child,
+        [data-framer-stack-direction-reverse=true] [data-framer-legacy-stack-gap-enabled=true][data-framer-stack-flexbox-gap=false]>*:first-child {
+            margin-right: 0;
+            margin-bottom: 0
+        }
+
+        NavigationContainer [data-framer-component-type=NavigationContainer]>*,
+        [data-framer-component-type=NavigationContainer]>[data-framer-component-type] {
+            position: relative
+        }
+
+        [data-framer-component-type=Scroll]::-webkit-scrollbar {
+            display: none
+        }
+
+        [data-framer-component-type=ScrollContentWrapper]>* {
+            position: relative
+        }
+
+        [data-framer-component-type=NativeScroll] {
+            -webkit-overflow-scrolling: touch
+        }
+
+        [data-framer-component-type=NativeScroll]>* {
+            position: relative
+        }
+
+        [data-framer-component-type=NativeScroll].direction-both {
+            overflow-x: scroll;
+            overflow-y: scroll
+        }
+
+        [data-framer-component-type=NativeScroll].direction-vertical {
+            overflow-x: hidden;
+            overflow-y: scroll
+        }
+
+        [data-framer-component-type=NativeScroll].direction-horizontal {
+            overflow-x: scroll;
+            overflow-y: hidden
+        }
+
+        [data-framer-component-type=NativeScroll].direction-vertical>* {
+            width: 100% !important
+        }
+
+        [data-framer-component-type=NativeScroll].direction-horizontal>* {
+            height: 100% !important
+        }
+
+        [data-framer-component-type=NativeScroll].scrollbar-hidden::-webkit-scrollbar {
+            display: none
+        }
+
+        [data-framer-component-type=PageContentWrapper]>*,
+        [data-framer-component-type=PageContentWrapper]>[data-framer-component-type] {
+            position: relative
+        }
+
+        [data-framer-component-type=DeviceComponent].no-device>* {
+            width: 100% !important;
+            height: 100% !important
+        }
+
+        [data-is-present=false],
+        [data-is-present=false] * {
+            pointer-events: none !important
+        }
+
+        [data-framer-cursor=pointer] {
+            cursor: pointer
+        }
+
+        [data-framer-cursor=grab] {
+            cursor: grab
+        }
+
+        [data-framer-cursor=grab]:active {
+            cursor: grabbing
+        }
+
+        [data-framer-component-type=Frame] *,
+        [data-framer-component-type=Stack] * {
+            pointer-events: auto
+        }
+
+        [data-framer-generated] * {
+            pointer-events: unset
+        }
+
+        .svgContainer svg {
+            display: block
+        }
+
+        [data-reset=button] {
+            border-width: 0;
+            padding: 0;
+            background: none
+        }
+
+        [data-hide-scrollbars=true]::-webkit-scrollbar {
+            width: 0px;
+            height: 0px
+        }
+
+        [data-hide-scrollbars=true]::-webkit-scrollbar-thumb {
+            background: transparent
+        }
+    </style>
+
+
+</head>
+
+<body class="framer-body-augiA20Il">
+
+
+		<script async="" src="https://events.framer.com/script"
+			data-fid="8eb0abf8122538dfe18f4d3a8c5d2989a4d04641a2f114da2bfa6d807d6ab27b"></script>
+
+		<div id="main"
+			data-framer-hydrate-v2="{&quot;routeId&quot;:&quot;augiA20Il&quot;,&quot;localizationId&quot;:&quot;default&quot;,&quot;localeId&quot;:&quot;default&quot;}"
+			data-framer-ssr-released-at="2023-12-19T13:06:04.152Z"
+			data-framer-page-optimized-at="2024-01-11T09:32:18.509Z" class="content content--canvas">
+			<!--$!--><!--/$-->
+		</div>
+		<div id="svg-templates" style="position: absolute; overflow: hidden; top: 0; left: 0; width: 0; height: 0">
+		</div>
+		<script>"use strict"; var animator = (() => { var E = Object.defineProperty; var ue = Object.getOwnPropertyDescriptor; var le = Object.getOwnPropertyNames; var de = Object.prototype.hasOwnProperty; var xe = (e, t) => { for (var r in t) E(e, r, { get: t[r], enumerable: !0 }) }, ge = (e, t, r, n) => { if (t && typeof t == "object" || typeof t == "function") for (let i of le(t)) !de.call(e, i) && i !== r && E(e, i, { get: () => t[i], enumerable: !(n = ue(t, i)) || n.enumerable }); return e }; var ye = e => ge(E({}, "__esModule", { value: !0 }), e); var Ne = {}; xe(Ne, { animateAppearEffects: () => me, getActiveVariantHash: () => fe, spring: () => S, startOptimizedAppearAnimation: () => Y }); var G = e => e.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase(); var z = "framerAppearId", Fe = "data-" + G(z); var Ae = ["transformPerspective", "x", "y", "z", "translateX", "translateY", "translateZ", "scale", "scaleX", "scaleY", "rotate", "rotateX", "rotateY", "rotateZ", "skew", "skewX", "skewY"], q = new Set(Ae); var C = (e, t, r) => Math.min(Math.max(r, e), t); var V = e => e; var U = V; var B = e => e * 1e3, M = e => e / 1e3; var H = e => Array.isArray(e) && typeof e[0] == "number"; var w = ([e, t, r, n]) => `cubic-bezier(${e}, ${t}, ${r}, ${n})`, he = { linear: "linear", ease: "ease", easeIn: "ease-in", easeOut: "ease-out", easeInOut: "ease-in-out", circIn: w([0, .65, .55, 1]), circOut: w([.55, 0, 1, .45]), backIn: w([.31, .01, .66, -.59]), backOut: w([.33, 1.53, .69, .99]) }; function $(e) { if (e) return H(e) ? w(e) : Array.isArray(e) ? e.map($) : he[e] } function N(e, t, r, { delay: n = 0, duration: i, repeat: a = 0, repeatType: o = "loop", ease: f, times: m } = {}) { let s = { [t]: r }; m && (s.offset = m); let p = $(f); return Array.isArray(p) && (s.easing = p), e.animate(s, { delay: n, duration: i, easing: Array.isArray(p) ? "linear" : p, fill: "both", iterations: a + 1, direction: o === "reverse" ? "alternate" : "normal" }) } function W(e, t) { return t ? e * (1e3 / t) : 0 } var Te = 5; function _(e, t, r) { let n = Math.max(t - Te, 0); return W(r - e(n), t - n) } var L = .001, be = .01, Q = 10, ve = .05, Oe = 1; function J({ duration: e = 800, bounce: t = .25, velocity: r = 0, mass: n = 1 }) { let i, a; U(e <= B(Q), "Spring duration must be 10 seconds or less"); let o = 1 - t; o = C(ve, Oe, o), e = C(be, Q, M(e)), o < 1 ? (i = s => { let p = s * o, c = p * e, u = p - r, d = D(s, o), l = Math.exp(-c); return L - u / d * l }, a = s => { let c = s * o * e, u = c * r + r, d = Math.pow(o, 2) * Math.pow(s, 2) * e, l = Math.exp(-c), x = D(Math.pow(s, 2), o); return (-i(s) + L > 0 ? -1 : 1) * ((u - d) * l) / x }) : (i = s => { let p = Math.exp(-s * e), c = (s - r) * e + 1; return -L + p * c }, a = s => { let p = Math.exp(-s * e), c = (r - s) * (e * e); return p * c }); let f = 5 / e, m = we(i, a, f); if (e = B(e), isNaN(m)) return { stiffness: 100, damping: 10, duration: e }; { let s = Math.pow(m, 2) * n; return { stiffness: s, damping: o * 2 * Math.sqrt(n * s), duration: e } } } var Me = 12; function we(e, t, r) { let n = r; for (let i = 1; i < Me; i++)n = n - e(n) / t(n); return n } function D(e, t) { return e * Math.sqrt(1 - t * t) } var Se = ["duration", "bounce"], Pe = ["stiffness", "damping", "mass"]; function ee(e, t) { return t.some(r => e[r] !== void 0) } function ke(e) { let t = { velocity: 0, stiffness: 100, damping: 10, mass: 1, isResolvedFromDuration: !1, ...e }; if (!ee(e, Pe) && ee(e, Se)) { let r = J(e); t = { ...t, ...r, velocity: 0, mass: 1 }, t.isResolvedFromDuration = !0 } return t } function S({ keyframes: e, restDelta: t, restSpeed: r, ...n }) { let i = e[0], a = e[e.length - 1], o = { done: !1, value: i }, { stiffness: f, damping: m, mass: s, velocity: p, duration: c, isResolvedFromDuration: u } = ke(n), d = p ? -M(p) : 0, l = m / (2 * Math.sqrt(f * s)), x = a - i, y = M(Math.sqrt(f / s)), O = Math.abs(x) < 5; r || (r = O ? .01 : 2), t || (t = O ? .005 : .5); let h; if (l < 1) { let g = D(y, l); h = A => { let T = Math.exp(-l * y * A); return a - T * ((d + l * y * x) / g * Math.sin(g * A) + x * Math.cos(g * A)) } } else if (l === 1) h = g => a - Math.exp(-y * g) * (x + (d + y * x) * g); else { let g = y * Math.sqrt(l * l - 1); h = A => { let T = Math.exp(-l * y * A), k = Math.min(g * A, 300); return a - T * ((d + l * y * x) * Math.sinh(k) + g * x * Math.cosh(k)) / g } } return { calculatedDuration: u && c || null, next: g => { let A = h(g); if (u) o.done = g >= c; else { let T = d; g !== 0 && (l < 1 ? T = _(h, g, A) : T = 0); let k = Math.abs(T) <= r, ce = Math.abs(a - A) <= t; o.done = k && ce } return o.value = o.done ? a : A, o } } } var K = (e, t) => `${e}: ${t}`; var b = new Map; var X; function te(e, t, r, n) { let i = K(e, q.has(t) ? "transform" : t), a = b.get(i); if (!a) return 0; let { animation: o, startTime: f } = a, m = () => { b.delete(i); try { o.cancel() } catch { } }; return f !== null ? (n.render(m), X === void 0 && (X = performance.now()), X - f || 0) : (m(), 0) } var I, v; function Y(e, t, r, n, i) { if (window.HandoffAppearAnimations === !1) return; let a = e.dataset[z]; if (!a) return; window.HandoffAppearAnimations = te; let o = K(a, t); v || (v = N(e, t, [r[0], r[0]], { duration: 1e4, ease: "linear" }), b.set(o, { animation: v, startTime: null })); let f = () => { v.cancel(); let m = N(e, t, r, n); I === void 0 && (I = performance.now()), m.startTime = I, b.set(o, { animation: m, startTime: I }), i && i(m) }; v.ready ? v.ready.then(f).catch(V) : f() } var F = ["transformPerspective", "x", "y", "z", "translateX", "translateY", "translateZ", "scale", "scaleX", "scaleY", "rotate", "rotateX", "rotateY", "rotateZ", "skew", "skewX", "skewY"], Ve = { x: "translateX", y: "translateY", z: "translateZ", transformPerspective: "perspective" }, De = { translateX: "px", translateY: "px", translateZ: "px", x: "px", y: "px", z: "px", perspective: "px", transformPerspective: "px", rotate: "deg", rotateX: "deg", rotateY: "deg" }; function re(e, t) { let r = De[e]; return !r || typeof t == "string" && t.endsWith(r) ? t : `${t}${r}` } function R(e) { return F.includes(e) } var Ke = (e, t) => F.indexOf(e) - F.indexOf(t); function oe({ transform: e, transformKeys: t }, { enableHardwareAcceleration: r = !0, allowTransformNone: n = !0 }, i, a) { let o = ""; t.sort(Ke); for (let f of t) o += `${Ve[f] || f}(${e[f]}) `; return r && !e.z && (o += "translateZ(0)"), o = o.trim(), a ? o = a(e, o) : n && i && (o = "none"), o } function j(e, t) { let r = new Set(Object.keys(e)); for (let n in t) r.add(n); return Array.from(r) } function Z(e, t) { let r = t - e.length; if (r <= 0) return e; let n = new Array(r).fill(e[e.length - 1]); return e.concat(n) } var ae = { duration: .001 }, P = { opacity: 1, scale: 1, translateX: 0, translateY: 0, translateZ: 0, x: 0, y: 0, z: 0, rotate: 0, rotateX: 0, rotateY: 0 }; function se(e, t, r, n, i) { return r.delay && (r.delay *= 1e3), r.type === "spring" ? Ee(e, t, r, n, i) : Ce(e, t, r, n, i) } function Ie(e, t, r) { let n = {}, i = 0, a = 0; for (let o of j(e, t)) { let f = e[o] ?? P[o], m = t[o] ?? P[o]; if (f === void 0 || m === void 0 || o !== "transformPerspective" && f === m) continue; o === "transformPerspective" && (n[o] = [f, m]); let s = Be(f, m, r), { duration: p, keyframes: c } = s; p === void 0 || c === void 0 || (p > i && (i = p, a = c.length), n[o] = c) } return { keyframeValuesByProps: n, longestDuration: i, longestLength: a } } function Ee(e, t, r, n, i) { let a = {}, { keyframeValuesByProps: o, longestDuration: f, longestLength: m } = Ie(e, t, r); if (!m) return a; let s = { ease: "linear", duration: f, delay: r.delay }, p = i ? ae : s, c = {}; for (let [d, l] of Object.entries(o)) R(d) ? c[d] = Z(l, m) : a[d] = { keyframes: Z(l, m), options: d === "opacity" ? s : p }; let u = pe(c, n); return u && (a.transform = { keyframes: u, options: p }), a } function ze(e) { let { type: t, duration: r, ...n } = e; return { duration: r * 1e3, ...n } } function Ce(e, t, r, n, i) { let a = ze(r); if (!a) return; let o = {}, f = i ? ae : a, m = {}; for (let p of j(e, t)) { let c = e[p] ?? P[p], u = t[p] ?? P[p]; c === void 0 || u === void 0 || p !== "transformPerspective" && c === u || (R(p) ? m[p] = [c, u] : o[p] = { keyframes: [c, u], options: p === "opacity" ? a : f }) } let s = pe(m, n); return s && (o.transform = { keyframes: s, options: f }), o } var ne = new Map, ie = 10; function Be(e, t, r) { let { damping: n, stiffness: i, mass: a } = r, o = `${e}-${t}-${n}-${i}-${a}`, f = ne.get(o); if (f) return f; let m = [e, t], s = S({ ...r, keyframes: m }), p = { done: !1, value: m[0] }, c = [], u = 0; for (; !p.done && u < 1e4;)p = s.next(u), c.push(p.value), u += ie; m = c; let d = u - ie, x = { keyframes: m, duration: d, ease: "linear" }; return ne.set(o, x), x } function pe(e, t) { let r = [], n = Object.values(e)[0]?.length; if (!n) return; let i = Object.keys(e); for (let a = 0; a < n; a++) { let o = {}, f = !0; for (let [s, p] of Object.entries(e)) { let c = p[a]; f && (f = c === void 0 || c === P[s]), c !== void 0 && (o[s] = re(s, c)) } let m = oe({ transform: o, transformKeys: i }, {}, f, t); r.push(m) } return r } function me(e, t, r, n, i, a) { for (let [o, f] of Object.entries(e)) { let { initial: m, animate: s, transformTemplate: p, variantHash: c } = f; if (!m || !s || c && a && c !== a) continue; let { transition: u, ...d } = s, l = se(m, d, u, $e(p, n), i); if (!l) continue; let x = {}, y = {}; for (let [O, h] of Object.entries(l)) x[O] = h.keyframes, y[O] = h.options; t(`[${r}="${o}"]`, x, y) } } function $e(e, t) { if (!(!e || !t)) return (r, n) => e.replace(t, n) } function fe(e) { return e ? e.find(r => r.mediaQuery ? window.matchMedia(r.mediaQuery).matches === !0 : !1)?.hash : void 0 } return ye(Ne); })();
+		</script>
+		<script data-framer-appear-animation="no-preference">
+			requestAnimationFrame(() => {
+				if (window.__framer_disable_appear_effects_optimization__ !== true) {
+					const respectReducedMotion = false
+					const reducedMotion = respectReducedMotion && window.matchMedia('(prefers-reduced-motion: reduce)').matches === true
+					const breakpoints = [{ "hash": "72rtr7", "mediaQuery": "(min-width: 1200px)" }, { "hash": "1i6nyat", "mediaQuery": "(min-width: 920px) and (max-width: 1199px)" }, { "hash": "1kwamla", "mediaQuery": "(min-width: 700px) and (max-width: 919px)" }, { "hash": "9si3rw", "mediaQuery": "(min-width: 650px) and (max-width: 699px)" }, { "hash": "1ae5its", "mediaQuery": "(min-width: 600px) and (max-width: 649px)" }, { "hash": "nowru9", "mediaQuery": "(min-width: 500px) and (max-width: 599px)" }, { "hash": "15hurun", "mediaQuery": "(max-width: 499px)" }]
+					if (animator) {
+						const appearAnimations = { "1vnn4vb": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1frroog", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1shd1ne": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wil9dy", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1nxj2wx": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1pjftpm", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1ks9znu": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "57kt51", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1p7n7b9": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "v48sqd", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "ssv9ic": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wo2pen", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1ibf419": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "dyrwvi", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "oskd46": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1rxicsw", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1ywc6z3": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "7ynjrd", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "wq84z7": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1u5g5le", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1opbyj": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "15osqjk", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "rf3cey": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "eu6uhi", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "109w5bt": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1s0ivir", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "uimhl1": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1e5zqh8", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1ibaw29": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wuwh1h", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "nyd5lq": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "fqvgls", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "qqn2eq": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "kbgqb6", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1f3606c": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1djrg8", "initial": { "opacity": 0.001, "rotate": 6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "2ln70f": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1frroog", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1p9if9y": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wil9dy", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1rui1gu": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1pjftpm", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1km5irk": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "57kt51", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "zoagqk": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "v48sqd", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "10l6bqt": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wo2pen", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1ph1mz7": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "dyrwvi", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "4zuos2": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1rxicsw", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1qlv3z5": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "7ynjrd", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "ncn08h": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1u5g5le", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "t5qg9b": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "15osqjk", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "16lek8b": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "eu6uhi", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1jvcn5n": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1s0ivir", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "7dftr5": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1e5zqh8", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1v3es7m": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wuwh1h", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "478slh": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "fqvgls", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "qbdbkd": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "kbgqb6", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1if8v5v": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1djrg8", "initial": { "opacity": 0.001, "rotate": -6, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1pj3r4x": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1frroog", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "12dzps3": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wil9dy", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translateY(-50%) __Appear_Animation_Transform__" }, "1ttpg7g": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1pjftpm", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "5591o9": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "57kt51", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "ct8zz0": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "v48sqd", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translateY(-50%) __Appear_Animation_Transform__" }, "113gv2d": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wo2pen", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "wffju0": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "dyrwvi", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "j7ky2w": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1rxicsw", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "elewk2": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "7ynjrd", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1gv6jb1": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1u5g5le", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translateY(-50%) __Appear_Animation_Transform__" }, "1rsm1xl": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "15osqjk", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translateY(-50%) __Appear_Animation_Transform__" }, "1magggf": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "eu6uhi", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "ifbatx": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1s0ivir", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translateY(-50%) __Appear_Animation_Transform__" }, "1e7cgfi": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1e5zqh8", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "17jadgz": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wuwh1h", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "199mr0n": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "fqvgls", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "lpznax": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "kbgqb6", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "19c1w4k": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.2, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1djrg8", "initial": { "opacity": 0.001, "rotate": -5, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translateY(-50%) __Appear_Animation_Transform__" }, "j292b1": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1frroog", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "i5dqt4": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wil9dy", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "3zc8so": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1pjftpm", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "4ngn65": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "57kt51", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1aph7fa": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "v48sqd", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translateY(-50%) __Appear_Animation_Transform__" }, "1h6di9a": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wo2pen", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1fp2227": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "dyrwvi", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "60pynq": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1rxicsw", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "tcnad4": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "7ynjrd", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1plf7ql": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1u5g5le", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translateY(-50%) __Appear_Animation_Transform__" }, "ex0hrh": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "15osqjk", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "qbmygj": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "eu6uhi", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1s81mi2": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1s0ivir", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "q8h4ea": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1e5zqh8", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "14y33x2": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wuwh1h", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "2rc1um": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "fqvgls", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "gvkito": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "kbgqb6", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1962kbi": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.3, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1djrg8", "initial": { "opacity": 0.001, "rotate": 4, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translateY(-50%) __Appear_Animation_Transform__" }, "9wppfw": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1frroog", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "4hkxi": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wil9dy", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1ouae2y": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1pjftpm", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "nkmqbo": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "57kt51", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1fduslq": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "v48sqd", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1n9jueu": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wo2pen", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1ndjw7u": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "dyrwvi", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1aymgf4": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1rxicsw", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1fs6tys": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "7ynjrd", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "185uqpu": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1u5g5le", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1y6ssm6": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "15osqjk", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "ott2ep": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "eu6uhi", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "h4y5xj": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1s0ivir", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "fuvdvd": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1e5zqh8", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "130a83z": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wuwh1h", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "1sa9chq": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "fqvgls", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "a6hry0": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "kbgqb6", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) translate(-50%, -50%) __Appear_Animation_Transform__" }, "otj798": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 0.4, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1djrg8", "initial": { "opacity": 0.001, "rotate": -8, "scale": 0.5, "x": 0, "y": 180 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1k6zu9b": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1frroog", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "pimtxz": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wil9dy", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "1hcpzw8": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1pjftpm", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "1uognhb": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "57kt51", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "l79j9u": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "v48sqd", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "2c31ik": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wo2pen", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "ux4gjm": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "dyrwvi", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "cksl17": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1rxicsw", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "r5gswx": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "7ynjrd", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "1jrglp3": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1u5g5le", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "8zm46g": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "15osqjk", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "1teqzxp": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "eu6uhi", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "1h77ehr": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1s0ivir", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "1sta2lo": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1e5zqh8", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "1gwtc5n": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wuwh1h", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "t4ith0": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "fqvgls", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "1rzwqjn": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "kbgqb6", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "14wzmc0": { "animate": { "opacity": 0, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1djrg8", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": 120 }, "transformTemplate": "perspective(1200px) translateX(-50%) __Appear_Animation_Transform__" }, "1in9ky0": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1frroog", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1snx9g2": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wil9dy", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "odhfmf": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1pjftpm", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1gnhqw0": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "57kt51", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "6hpclq": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "v48sqd", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "sq5m9i": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wo2pen", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "numu1q": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "dyrwvi", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1lgkv7e": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1rxicsw", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "164leaa": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "7ynjrd", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "xlhjnn": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1u5g5le", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1kn2eqo": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "15osqjk", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1pqa2nf": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "eu6uhi", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "yy4f4o": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1s0ivir", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "1ehmk1o": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1e5zqh8", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "t7s8t4": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "wuwh1h", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "e1cee7": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "fqvgls", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "rt09d2": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "kbgqb6", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" }, "wp73bk": { "animate": { "opacity": 1, "rotate": 0, "rotateX": 0, "rotateY": 0, "scale": 1, "transition": { "damping": 60, "delay": 1, "mass": 1, "stiffness": 400, "type": "spring" }, "x": 0, "y": 0 }, "variantHash": "1djrg8", "initial": { "opacity": 0.001, "rotate": 0, "scale": 1, "x": 0, "y": -100 }, "transformTemplate": "perspective(1200px) __Appear_Animation_Transform__" } }
+						const activeVariantHash = animator.getActiveVariantHash(breakpoints)
+						const animate = (selector, keyframesByProps, optionsByProps) => {
+							for (const [name, keyframes] of Object.entries(keyframesByProps)) {
+								const options = optionsByProps[name]
+								const element = document.querySelector(selector)
+								if (!element) continue
+								const animation = animator.startOptimizedAppearAnimation(element, name, keyframes, options)
+							}
+						}
+						animator.animateAppearEffects(appearAnimations, animate, "data-framer-appear-id", "__Appear_Animation_Transform__", reducedMotion, activeVariantHash)
+					}
+				}
+			})
+		</script>
+		<script type="module" data-framer-bundle=""
+			src="https://framerusercontent.com/sites/6OPrUVhLnhyzXXGIJ34RIQ/default_script0.R73PKTYD.mjs"></script>
+
+	<script>const { PI, cos, sin, abs, sqrt, pow, round, random, atan2 } = Math;
+		const HALF_PI = 0.5 * PI;
+		const TAU = 2 * PI;
+		const TO_RAD = PI / 180;
+		const floor = n => n | 0;
+		const rand = n => n * random();
+		const randIn = (min, max) => rand(max - min) + min;
+		const randRange = n => n - rand(2 * n);
+		const fadeIn = (t, m) => t / m;
+		const fadeOut = (t, m) => (m - t) / m;
+		const fadeInOut = (t, m) => {
+			let hm = 0.5 * m;
+			return abs((t + hm) % m - hm) / (hm);
+		};
+		const dist = (x1, y1, x2, y2) => sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+		const angle = (x1, y1, x2, y2) => atan2(y2 - y1, x2 - x1);
+		const lerp = (n1, n2, speed) => (1 - speed) * n1 + speed * n2;</script>
+	<script>'use strict';
+
+		const particleCount = 700;
+		const particlePropCount = 9;
+		const particlePropsLength = particleCount * particlePropCount;
+		const rangeY = 100;
+		const baseTTL = 50;
+		const rangeTTL = 150;
+		const baseSpeed = 0.1;
+		const rangeSpeed = 2;
+		const baseRadius = 1;
+		const rangeRadius = 4;
+		const baseHue = 220;
+		const rangeHue = 100;
+		const noiseSteps = 8;
+		const xOff = 0.00125;
+		const yOff = 0.00125;
+		const zOff = 0.0005;
+		const backgroundColor = 'hsla(260,40%,5%,1)';
+
+		let container;
+		let canvas;
+		let ctx;
+		let center;
+		let gradient;
+		let tick;
+		let simplex;
+		let particleProps;
+		let positions;
+		let velocities;
+		let lifeSpans;
+		let speeds;
+		let sizes;
+		let hues;
+
+		function setup() {
+			createCanvas();
+			resize();
+			initParticles();
+			draw();
+		}
+
+		function initParticles() {
+			tick = 0;
+			simplex = new SimplexNoise();
+			particleProps = new Float32Array(particlePropsLength);
+
+			let i;
+
+			for (i = 0; i < particlePropsLength; i += particlePropCount) {
+				initParticle(i);
+			}
+		}
+
+		function initParticle(i) {
+			let x, y, vx, vy, life, ttl, speed, radius, hue;
+
+			x = rand(canvas.a.width);
+			y = center[1] + randRange(rangeY);
+			vx = 0;
+			vy = 0;
+			life = 0;
+			ttl = baseTTL + rand(rangeTTL);
+			speed = baseSpeed + rand(rangeSpeed);
+			radius = baseRadius + rand(rangeRadius);
+			hue = baseHue + rand(rangeHue);
+
+			particleProps.set([x, y, vx, vy, life, ttl, speed, radius, hue], i);
+		}
+
+		function drawParticles() {
+			let i;
+
+			for (i = 0; i < particlePropsLength; i += particlePropCount) {
+				updateParticle(i);
+			}
+		}
+
+		function updateParticle(i) {
+			let i2 = 1 + i, i3 = 2 + i, i4 = 3 + i, i5 = 4 + i, i6 = 5 + i, i7 = 6 + i, i8 = 7 + i, i9 = 8 + i;
+			let n, x, y, vx, vy, life, ttl, speed, x2, y2, radius, hue;
+
+			x = particleProps[i];
+			y = particleProps[i2];
+			n = simplex.noise3D(x * xOff, y * yOff, tick * zOff) * noiseSteps * TAU;
+			vx = lerp(particleProps[i3], cos(n), 0.5);
+			vy = lerp(particleProps[i4], sin(n), 0.5);
+			life = particleProps[i5];
+			ttl = particleProps[i6];
+			speed = particleProps[i7];
+			x2 = x + vx * speed;
+			y2 = y + vy * speed;
+			radius = particleProps[i8];
+			hue = particleProps[i9];
+
+			drawParticle(x, y, x2, y2, life, ttl, radius, hue);
+
+			life++;
+
+			particleProps[i] = x2;
+			particleProps[i2] = y2;
+			particleProps[i3] = vx;
+			particleProps[i4] = vy;
+			particleProps[i5] = life;
+
+			(checkBounds(x, y) || life > ttl) && initParticle(i);
+		}
+
+		function drawParticle(x, y, x2, y2, life, ttl, radius, hue) {
+			ctx.a.save();
+			ctx.a.lineCap = 'round';
+			ctx.a.lineWidth = radius;
+			ctx.a.strokeStyle = `hsla(${hue},100%,60%,${fadeInOut(life, ttl)})`;
+			ctx.a.beginPath();
+			ctx.a.moveTo(x, y);
+			ctx.a.lineTo(x2, y2);
+			ctx.a.stroke()
+			ctx.a.closePath();
+			ctx.a.restore();
+		}
+
+		function checkBounds(x, y) {
+			return (
+				x > canvas.a.width ||
+				x < 0 ||
+				y > canvas.a.height ||
+				y < 0
+			);
+		}
+
+		function createCanvas() {
+			container = document.querySelector('.content--canvas');
+			canvas = {
+				a: document.createElement('canvas'),
+				b: document.createElement('canvas')
+			};
+			canvas.b.style = `
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				`;
+			container.appendChild(canvas.b);
+			ctx = {
+				a: canvas.a.getContext('2d'),
+				b: canvas.b.getContext('2d')
+			};
+			center = [];
+		}
+
+		function resize() {
+			const { innerWidth, innerHeight } = window;
+
+			canvas.a.width = innerWidth;
+			canvas.a.height = innerHeight;
+
+			ctx.a.drawImage(canvas.b, 0, 0);
+
+			canvas.b.width = innerWidth;
+			canvas.b.height = innerHeight;
+
+			ctx.b.drawImage(canvas.a, 0, 0);
+
+			center[0] = 0.5 * canvas.a.width;
+			center[1] = 0.5 * canvas.a.height;
+		}
+
+		function renderGlow() {
+			ctx.b.save();
+			ctx.b.filter = 'blur(8px) brightness(200%)';
+			ctx.b.globalCompositeOperation = 'lighter';
+			ctx.b.drawImage(canvas.a, 0, 0);
+			ctx.b.restore();
+
+			ctx.b.save();
+			ctx.b.filter = 'blur(4px) brightness(200%)';
+			ctx.b.globalCompositeOperation = 'lighter';
+			ctx.b.drawImage(canvas.a, 0, 0);
+			ctx.b.restore();
+		}
+
+		function renderToScreen() {
+			ctx.b.save();
+			ctx.b.globalCompositeOperation = 'lighter';
+			ctx.b.drawImage(canvas.a, 0, 0);
+			ctx.b.restore();
+		}
+
+		function draw() {
+			tick++;
+
+			ctx.a.clearRect(0, 0, canvas.a.width, canvas.a.height);
+
+			ctx.b.fillStyle = backgroundColor;
+			ctx.b.fillRect(0, 0, canvas.a.width, canvas.a.height);
+
+			drawParticles();
+			renderGlow();
+			renderToScreen();
+
+			window.requestAnimationFrame(draw);
+		}
+
+		window.addEventListener('load', setup);
+		window.addEventListener('resize', resize);</script>
+	<script>!function () { "use strict"; var r = .5 * (Math.sqrt(3) - 1), e = (3 - Math.sqrt(3)) / 6, t = 1 / 6, a = (Math.sqrt(5) - 1) / 4, o = (5 - Math.sqrt(5)) / 20; function i(r) { var e; e = "function" == typeof r ? r : r ? function () { var r = 0, e = 0, t = 0, a = 1, o = (i = 4022871197, function (r) { r = r.toString(); for (var e = 0; e < r.length; e++) { var t = .02519603282416938 * (i += r.charCodeAt(e)); t -= i = t >>> 0, i = (t *= i) >>> 0, i += 4294967296 * (t -= i) } return 2.3283064365386963e-10 * (i >>> 0) }); var i; r = o(" "), e = o(" "), t = o(" "); for (var n = 0; n < arguments.length; n++)(r -= o(arguments[n])) < 0 && (r += 1), (e -= o(arguments[n])) < 0 && (e += 1), (t -= o(arguments[n])) < 0 && (t += 1); return o = null, function () { var o = 2091639 * r + 2.3283064365386963e-10 * a; return r = e, e = t, t = o - (a = 0 | o) } }(r) : Math.random, this.p = n(e), this.perm = new Uint8Array(512), this.permMod12 = new Uint8Array(512); for (var t = 0; t < 512; t++)this.perm[t] = this.p[255 & t], this.permMod12[t] = this.perm[t] % 12 } function n(r) { var e, t = new Uint8Array(256); for (e = 0; e < 256; e++)t[e] = e; for (e = 0; e < 255; e++) { var a = e + ~~(r() * (256 - e)), o = t[e]; t[e] = t[a], t[a] = o } return t } i.prototype = { grad3: new Float32Array([1, 1, 0, -1, 1, 0, 1, -1, 0, -1, -1, 0, 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, -1, 0, 1, 1, 0, -1, 1, 0, 1, -1, 0, -1, -1]), grad4: new Float32Array([0, 1, 1, 1, 0, 1, 1, -1, 0, 1, -1, 1, 0, 1, -1, -1, 0, -1, 1, 1, 0, -1, 1, -1, 0, -1, -1, 1, 0, -1, -1, -1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 0, -1, 1, 1, 0, -1, -1, -1, 0, 1, 1, -1, 0, 1, -1, -1, 0, -1, 1, -1, 0, -1, -1, 1, 1, 0, 1, 1, 1, 0, -1, 1, -1, 0, 1, 1, -1, 0, -1, -1, 1, 0, 1, -1, 1, 0, -1, -1, -1, 0, 1, -1, -1, 0, -1, 1, 1, 1, 0, 1, 1, -1, 0, 1, -1, 1, 0, 1, -1, -1, 0, -1, 1, 1, 0, -1, 1, -1, 0, -1, -1, 1, 0, -1, -1, -1, 0]), noise2D: function (t, a) { var o, i, n = this.permMod12, f = this.perm, s = this.grad3, v = 0, h = 0, l = 0, u = (t + a) * r, d = Math.floor(t + u), p = Math.floor(a + u), M = (d + p) * e, m = t - (d - M), c = a - (p - M); m > c ? (o = 1, i = 0) : (o = 0, i = 1); var y = m - o + e, w = c - i + e, g = m - 1 + 2 * e, A = c - 1 + 2 * e, x = 255 & d, q = 255 & p, D = .5 - m * m - c * c; if (D >= 0) { var S = 3 * n[x + f[q]]; v = (D *= D) * D * (s[S] * m + s[S + 1] * c) } var U = .5 - y * y - w * w; if (U >= 0) { var b = 3 * n[x + o + f[q + i]]; h = (U *= U) * U * (s[b] * y + s[b + 1] * w) } var F = .5 - g * g - A * A; if (F >= 0) { var N = 3 * n[x + 1 + f[q + 1]]; l = (F *= F) * F * (s[N] * g + s[N + 1] * A) } return 70 * (v + h + l) }, noise3D: function (r, e, a) { var o, i, n, f, s, v, h, l, u, d, p = this.permMod12, M = this.perm, m = this.grad3, c = (r + e + a) * (1 / 3), y = Math.floor(r + c), w = Math.floor(e + c), g = Math.floor(a + c), A = (y + w + g) * t, x = r - (y - A), q = e - (w - A), D = a - (g - A); x >= q ? q >= D ? (s = 1, v = 0, h = 0, l = 1, u = 1, d = 0) : x >= D ? (s = 1, v = 0, h = 0, l = 1, u = 0, d = 1) : (s = 0, v = 0, h = 1, l = 1, u = 0, d = 1) : q < D ? (s = 0, v = 0, h = 1, l = 0, u = 1, d = 1) : x < D ? (s = 0, v = 1, h = 0, l = 0, u = 1, d = 1) : (s = 0, v = 1, h = 0, l = 1, u = 1, d = 0); var S = x - s + t, U = q - v + t, b = D - h + t, F = x - l + 2 * t, N = q - u + 2 * t, C = D - d + 2 * t, P = x - 1 + .5, T = q - 1 + .5, _ = D - 1 + .5, j = 255 & y, k = 255 & w, z = 255 & g, B = .6 - x * x - q * q - D * D; if (B < 0) o = 0; else { var E = 3 * p[j + M[k + M[z]]]; o = (B *= B) * B * (m[E] * x + m[E + 1] * q + m[E + 2] * D) } var G = .6 - S * S - U * U - b * b; if (G < 0) i = 0; else { var H = 3 * p[j + s + M[k + v + M[z + h]]]; i = (G *= G) * G * (m[H] * S + m[H + 1] * U + m[H + 2] * b) } var I = .6 - F * F - N * N - C * C; if (I < 0) n = 0; else { var J = 3 * p[j + l + M[k + u + M[z + d]]]; n = (I *= I) * I * (m[J] * F + m[J + 1] * N + m[J + 2] * C) } var K = .6 - P * P - T * T - _ * _; if (K < 0) f = 0; else { var L = 3 * p[j + 1 + M[k + 1 + M[z + 1]]]; f = (K *= K) * K * (m[L] * P + m[L + 1] * T + m[L + 2] * _) } return 32 * (o + i + n + f) }, noise4D: function (r, e, t, i) { var n, f, s, v, h, l, u, d, p, M, m, c, y, w, g, A, x, q = this.perm, D = this.grad4, S = (r + e + t + i) * a, U = Math.floor(r + S), b = Math.floor(e + S), F = Math.floor(t + S), N = Math.floor(i + S), C = (U + b + F + N) * o, P = r - (U - C), T = e - (b - C), _ = t - (F - C), j = i - (N - C), k = 0, z = 0, B = 0, E = 0; P > T ? k++ : z++, P > _ ? k++ : B++, P > j ? k++ : E++, T > _ ? z++ : B++, T > j ? z++ : E++, _ > j ? B++ : E++; var G = P - (l = k >= 3 ? 1 : 0) + o, H = T - (u = z >= 3 ? 1 : 0) + o, I = _ - (d = B >= 3 ? 1 : 0) + o, J = j - (p = E >= 3 ? 1 : 0) + o, K = P - (M = k >= 2 ? 1 : 0) + 2 * o, L = T - (m = z >= 2 ? 1 : 0) + 2 * o, O = _ - (c = B >= 2 ? 1 : 0) + 2 * o, Q = j - (y = E >= 2 ? 1 : 0) + 2 * o, R = P - (w = k >= 1 ? 1 : 0) + 3 * o, V = T - (g = z >= 1 ? 1 : 0) + 3 * o, W = _ - (A = B >= 1 ? 1 : 0) + 3 * o, X = j - (x = E >= 1 ? 1 : 0) + 3 * o, Y = P - 1 + 4 * o, Z = T - 1 + 4 * o, $ = _ - 1 + 4 * o, rr = j - 1 + 4 * o, er = 255 & U, tr = 255 & b, ar = 255 & F, or = 255 & N, ir = .6 - P * P - T * T - _ * _ - j * j; if (ir < 0) n = 0; else { var nr = q[er + q[tr + q[ar + q[or]]]] % 32 * 4; n = (ir *= ir) * ir * (D[nr] * P + D[nr + 1] * T + D[nr + 2] * _ + D[nr + 3] * j) } var fr = .6 - G * G - H * H - I * I - J * J; if (fr < 0) f = 0; else { var sr = q[er + l + q[tr + u + q[ar + d + q[or + p]]]] % 32 * 4; f = (fr *= fr) * fr * (D[sr] * G + D[sr + 1] * H + D[sr + 2] * I + D[sr + 3] * J) } var vr = .6 - K * K - L * L - O * O - Q * Q; if (vr < 0) s = 0; else { var hr = q[er + M + q[tr + m + q[ar + c + q[or + y]]]] % 32 * 4; s = (vr *= vr) * vr * (D[hr] * K + D[hr + 1] * L + D[hr + 2] * O + D[hr + 3] * Q) } var lr = .6 - R * R - V * V - W * W - X * X; if (lr < 0) v = 0; else { var ur = q[er + w + q[tr + g + q[ar + A + q[or + x]]]] % 32 * 4; v = (lr *= lr) * lr * (D[ur] * R + D[ur + 1] * V + D[ur + 2] * W + D[ur + 3] * X) } var dr = .6 - Y * Y - Z * Z - $ * $ - rr * rr; if (dr < 0) h = 0; else { var pr = q[er + 1 + q[tr + 1 + q[ar + 1 + q[or + 1]]]] % 32 * 4; h = (dr *= dr) * dr * (D[pr] * Y + D[pr + 1] * Z + D[pr + 2] * $ + D[pr + 3] * rr) } return 27 * (n + f + s + v + h) } }, i._buildPermutationTable = n, "undefined" != typeof define && define.amd && define(function () { return i }), "undefined" != typeof exports ? exports.SimplexNoise = i : "undefined" != typeof window && (window.SimplexNoise = i), "undefined" != typeof module && (module.exports = i) }();</script>
+</body>
+
+</html>
